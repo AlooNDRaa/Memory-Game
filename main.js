@@ -38,7 +38,6 @@ function createCardsElement(card) {
      element.dataset.cardId = card.id;
     let image = document.createElement('img');
     image.src = card.image;
-
     element.appendChild(image);
     element.addEventListener('click', cardClickHandler);
      return element;
@@ -55,7 +54,7 @@ function renderGameBoard() {
 
 function renderScore(){
     let scoreBoard = document.querySelector('#score');
-    scoreBoard.innerHTML = 'score: ' + score;
+    scoreBoard.innerHTML = 'Score: ' + score;
 }
 
 let score = 0; 
@@ -93,6 +92,11 @@ function checkForMath() {
             renderScore();
         }, 1000);
     }
+}
+
+
+function restartGame() {
+    
 }
 
 renderGameBoard();

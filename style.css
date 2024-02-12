@@ -1,5 +1,8 @@
 body {
     background-color: black;
+    background-image:linear-gradient(rgba(7,7, 7, 0.65), rgba(0, 0, 0, 0.6)), url('https://i.pinimg.com/originals/5f/00/96/5f009674bb012f8e26ea43dad4abdd00.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0; 
     padding: 0; 
     height: 100vh;  
@@ -9,7 +12,6 @@ body {
 }
 
 #Board {
-    background-color: rgb(9, 5, 47);
     height: 35rem;
     width: 60rem;
     display: flex;
@@ -19,7 +21,7 @@ body {
 }
 
 .card{
-    border: 1px solid #fefbfb;
+    border: 1px solid #515151;
     height: 9rem;
     width: 9rem;
     display: flex;
@@ -31,24 +33,30 @@ body {
     cursor: pointer;
     transition: transform 0.2s;
     background: rgb(0, 0, 0);
+    position: relative;
 }
 
 .card.flipped{
     transform: rotateY(180deg);
-    background: black;
 }
 
 #score{
-    font-size: 30px;
-    color: rgb(255, 255, 255);
+    font-size: 25px;
+    color: rgb(211, 211, 211);
+    display: flex;
+    margin: 1rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
 }
 
 img{
     width: 5rem;
     border-radius: 1rem;
-    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.5s;
+    position: absolute;
 }
 
-img.flipped{
-    transform: rotateY(180deg);
+.card.flipped img {
+    opacity:1; 
 }
