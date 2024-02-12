@@ -27,8 +27,9 @@ body {
 }
 
 .buttonGame{
-    background-color: #231340;
-    color: rgb(206, 208, 210);
+    background-color: rgb(100, 6, 100);
+    color: rgb(190, 192, 194);
+    font-size:small;
     border:none;
     cursor: pointer;
     width: 6rem;
@@ -64,7 +65,7 @@ body {
 }
 
 #score{
-    font-size: 25px;
+    font-size: 27px;
     color: rgb(211, 211, 211);
     margin: 1rem;
     text-align: center;
