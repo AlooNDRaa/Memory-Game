@@ -95,9 +95,26 @@ function checkForMath() {
 }
 
 
-function restartGame() {
-    
+function buttonRestartGame() {
+ let button = document.createElement('button');
+ button.className = 'buttonGame';
+ button.textContent = 'Restart';
+
+let containerbutton = document.getElementById('buttonGaame');
+containerbutton.appendChild(button);
+
+ return button;
+}
+
+function clickButtonRestart() {
+    let flippedCards = document.querySelectorAll('flipped');
+
+    flippedCards.forEach(function(card){
+        card.classList.remove('flipped')
+    })
 }
 
 renderGameBoard();
 renderScore();
+buttonRestartGame();
+clickButtonRestart();

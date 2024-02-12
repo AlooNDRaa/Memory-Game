@@ -20,6 +20,29 @@ body {
     align-items: center;
 }
 
+#buttonGaame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonGame{
+    background-color: #231340;
+    color: rgb(206, 208, 210);
+    border:none;
+    cursor: pointer;
+    width: 6rem;
+    padding: 0.7rem;
+    border-radius:0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonGame:active{
+    transform: scale(0.9);
+}
+
 .card{
     border: 1px solid #515151;
     height: 9rem;
@@ -43,14 +66,13 @@ body {
 #score{
     font-size: 25px;
     color: rgb(211, 211, 211);
-    display: flex;
     margin: 1rem;
     text-align: center;
     font-family:'Times New Roman', Times, serif;
 }
 
 img{
-    width: 5rem;
+    width: 6rem;
     border-radius: 1rem;
     opacity: 0; 
     transition: opacity 0.5s;
